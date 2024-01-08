@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
 import HomeScreen from "../pages/HomeScreen";
+import TestScreen from "../pages/TestScreen";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -10,6 +11,11 @@ export const mainRouter = createBrowserRouter([
       {
         index: true,
         element: <HomeScreen />,
+      },
+      {
+        index: true,
+        path: "/test",
+        element: <TestScreen />,
       },
     ],
   },
